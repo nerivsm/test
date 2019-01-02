@@ -51,21 +51,22 @@ int main()
 using namespace std; 
 int main()
 {
-    int from=0, to=8; 
+    int from=0, to=7; 
     int count = to - from + 1; 
     int n = (count + 7) / 8;
-    cout<<"count: "<<count<<", n: "<<n<<", remainder: "<<count%8<<"\n";
+    cout<<"-- count: "<<count<<", n: "<<n<<", remainder: "<<count%8<<" --\n";
 
     switch (count % 8) 
     {
-        case 0: do { to = from++; cout<<"case 0\n"; 
-        case 7:      to = from++; cout<<"case 7\n";
-        case 6:      to = from++; cout<<"case 6\n";
-        case 5:      to = from++; cout<<"case 5\n";
-        case 4:      to = from++; cout<<"case 4\n";
-        case 3:      to = from++; cout<<"case 3\n";
-        case 2:      to = from++; cout<<"case 2\n";
-        case 1:      to = from++; cout<<"case 1\n";
+        case 0: do { to = from++; cout<<"\tcase 0\n"; 
+        case 7:      to = from++; cout<<"\tcase 7\n";
+        case 6:      to = from++; cout<<"\tcase 6\n";
+        case 5:      to = from++; cout<<"\tcase 5\n";
+        case 4:      to = from++; cout<<"\tcase 4\n";
+        case 3:      to = from++; cout<<"\tcase 3\n";
+        case 2:      to = from++; cout<<"\tcase 2\n";
+        case 1:      to = from++; cout<<"\tcase 1\n";
+                    cout<<"-- end of loop, n: "<<n<<" --\n";
                 } while (--n > 0);
     }
 
